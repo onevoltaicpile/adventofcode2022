@@ -1,4 +1,7 @@
-with open('./input.txt', 'r') as file:
+import os
+import sys
+
+with open(os.path.join(sys.path[0], "input.txt"), 'r') as file:
     caloriessum = 0
     calorieslist = []
     for line in file:
